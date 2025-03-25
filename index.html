@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a557ca1071.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolios">Portfilio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Fuadul</span> <br>Hasan From Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -- ---------- ------ About -------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        Hey there! I’m Fuadul Hasan, a software engineer who loves turning ideas into reality through code. From writing clean, maintainable backend services to optimizing databases, I focus on building robust and scalable applications. My journey started with Java and has expanded to Go, Python, and Kotlin. Currently, I’m diving deeper into FastAPI, databases, and system design to take my backend skills to the next level. Always learning, always building!
+                    
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Desigingin Web/App interfaces</span></li>
+                            <li><span>Web Development</span> <br>Building responsive websites</span></li>
+                            <li><span>App Development</span> <br>Creating mobile applications</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Backend Developer</span> <br>Brain Station 23</li>
+                            <li><span>Software Engineer Intern</span> <br>XYZ Company</li>
+                            <li><span>Freelance Developer</span> <br>Worked on various web & app projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor’s Degree</span> <br>Computer Science & Engineering</li>
+                            <li><span>Certifications</span> <br>Udemy ML Course, Other relevant courses</li>
+                            <li><span>Competitive Programming</span> <br>LeetCode, Codeforces</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------ services ------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        I design beautiful websites that are easy to use and navigate. I focus on the user experience to create a seamless design.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        I design beautiful websites that are easy to use and navigate. I focus on the user experience to create a seamless design.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        I design beautiful websites that are easy to use and navigate. I focus on the user experience to create a seamless design.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------ Portfolio ------------------ -->
+    <div id="portfolios">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.webp">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A social media app designed to connect people and share moments. Built with a focus on user engagement and seamless interaction.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.webp">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>A social media app designed to connect people and share moments. Built with a focus on user engagement and seamless interaction.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.webp">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>A social media app designed to connect people and share moments. Built with a focus on user engagement and seamless interaction.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- ------------------ Contact ------------------ -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> fuadul202@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +8801754-726519</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/hfuad7161"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/fuadul-hasan-5059b91bb/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Fuadul Hasan.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="text" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> 2023 Fuadul Hasan. All rights reserved.</p>
+        </div>
+     </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tab){
+            for(i=0; i<tablinks.length; i++){
+                tablinks[i].classList.remove('active-link');
+            }
+            for(i=0; i<tabcontents.length; i++){
+                tabcontents[i].classList.remove('active-tab');
+            }
+            document.getElementById(tab).classList.add('active-tab');
+            event.currentTarget.classList.add('active-link');
+        }
+    </script>
+    <script>
+        function openmenu(){
+            document.getElementById('sidemenu').style.right = '0';
+        }
+        function closemenu(){
+            document.getElementById('sidemenu').style.right = '-200px';
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzOqjmIO5VI0-Erte48d9dO9DQ5pk6vRw3u_cSJyVawRELtxE2lcqADma83k6APtok6/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(() => {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
